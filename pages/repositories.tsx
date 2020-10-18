@@ -2,7 +2,14 @@ import { NextPage } from 'next'
 import Link from 'next/link'
 import Nav from '../components/nav'
 
-const Modal: NextPage = ({ data }) => {
+interface iRepo {
+  name?: string
+  description?: string
+  language?: string
+  html_url?: string
+}
+
+const Modal: NextPage<iRepo> = ({ data }: any) => {
   return (
     <div className="absolute w-screen h-full left-0 inset-y-0 bg-pink-color mr-1/2">
       <Nav />
@@ -32,7 +39,7 @@ const Modal: NextPage = ({ data }) => {
 
 export async function getServerSideProps() {
   const res = await fetch(`https://api.github.com/users/DiogoReiss/repos`)
-  const data = await res.json()
+  const data: iRepo = await res.json()
 
   return { props: { data }}
 }
