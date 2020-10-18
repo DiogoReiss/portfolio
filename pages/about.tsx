@@ -1,6 +1,5 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
-import Modal from '../components/repositories'
 import Nav from '../components/nav'
 
 const AboutPage: NextPage = () => {
@@ -11,9 +10,7 @@ const AboutPage: NextPage = () => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"/> 
       </Head>
-      <Modal />
       <Nav />
-
       <img
         src="images/profile.jpg"  
         className='absolute rounded-full border-solid border-4 border-pink-color w-1/6 h-1/12 insent-x-0 right-0 m-20 mx-40'
