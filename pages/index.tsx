@@ -11,7 +11,7 @@ const IndexPage: NextPage = () => {
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"/> 
       </Head>
       <Nav />
-      <div className="absolute max-w-lg max-h-lg inset-y-0 self-center my-auto md:my-20 lg:my-56 xl:my-64 right-0 mr-32">
+      <div className="absolute max-w-lg max-h-lg inset-y-0 self-center my-24 md:my-32 lg:my-32 xl:my-40 right-0 mr-32">
         <h1 className="font-header h-2 md:text-2xl lg:text-4xl xl:text-6xl text-white-color font-black text-right tracking-tight">Hi, Dear. I'm a <strong className="text-pink-color">fullstack programmer</strong>. Come see my projects<strong className="text-pink-color"> :).</strong></h1>
       </div>
       <footer className="absolute inset-x-0 bottom-0 p-2 bg-transparent">
