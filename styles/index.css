@@ -13,15 +13,3 @@
 /* Stop purging. */
 
 /* Your own custom utilities */
-
-@layer base {
-  * {
-    @apply bg-background-color;
-  }
-  .nav-link {
-    @apply text-pink-color font-bold my-2 mx-4 rounded text-xl;
-  }
-  .modal-open {
-    @apply absolute w-2 h-full right-0 left-0 inset-y-0 bg-pink-color;
-  };
-}

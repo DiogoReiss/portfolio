@@ -19,14 +19,14 @@ module.exports = {
       'bold': "700",
       'extrabold': "800",
       'black': "900",
-      'nigga': '2000'
     },
     extend: {
       colors: {
         'accent-1': '#333',
         'background-color': '#1E1F28',
-        'pink-color': '#FF809F',
+        'pink-color': '#FF2E93',
         'white-color': '#EEEEEE',
+        'gray-color': '#D8D8D8',
       },
     },
   },
