@@ -23,7 +23,7 @@ export default function Layout({ children, title, actualPage }) {
         />
         <meta name="author" content="Diogo Reis" />
       </Head>
-      <body className="flex bg-gray-color w-full h-screen">
+      <div className="flex bg-gray-color w-full h-screen">
         <div className="absolute h-screen w-3 bg-background-color" />
         <Nav actualPage={`${actualPage}`} />
         {children}
@@ -32,7 +32,7 @@ export default function Layout({ children, title, actualPage }) {
             website made with, nextjs, tailwindcss and lots of love
           </p>
         </footer>
-      </body>
+      </div>
     </>
   );
 }
