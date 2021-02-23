@@ -42,7 +42,7 @@ const AboutPage: NextPage = () => {
                 <strong className="text-pink-color font-semibold">
                   next.js
                 </strong>{' '}
-                :3.
+                :).
               </h1>
               <div className="flex w-12/12 md:w-7/12 justify-end">
                 <img
