@@ -4,7 +4,7 @@ import ImageCard from '../components/imageCard';
 
 const AboutPage: NextPage = () => {
   return (
-    <Layout title="About Me" actualPage="ABOUT ME">
+    <Layout title="About Me " actualPage="ABOUT ME">
       <div className="flex flex-row w-screen justify-center">
         <div
           className="flex-1 justify-center w-full mr-0 hidden md:flex
