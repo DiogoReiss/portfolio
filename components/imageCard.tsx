@@ -1,9 +1,4 @@
-interface IimageCardProps {
-  src: string;
-  alt: string;
-  cardStyle?: string;
-  imgStyle?: string;
-}
+import { IimageCardProps } from '../utils/types';
 
 export default function ImageCard({
   src,

@@ -5,7 +5,7 @@ const IndexPage: NextPage = () => {
   return (
     <div className="w-full">
       <Layout title="Diogo Reis" actualPage="HOME">
-        <div className="flex flex-row w-screen justify-center">
+        <div className="flex flex-row w-screen h-full justify-center">
           <div className="grid justify-items-center flex-1">
             <div className="flex flex-col justify-center md:text-left items-center text-center">
               <h1 className="flex font-extrabold font-header text-background-color text-4xl xl:text-6xl md:self-center lg:self-start">
