@@ -8,8 +8,8 @@ const Repositories: NextPage<IRepo> = ({ data }: any) => {
     <Layout title="Projects" actualPage="GITHUB">
       <div className="flex flex-row w-screen h-full justify-center">
         <section className="flex flex-col justify-center items-center flex-1">
-          <h1 className="flex font-header text-background-color font-semibold mb-6 md:ml-8 self-center md:self-start text-base md:text-2xl lg:text-3xl">
-            Now you can see my{'    '}
+          <h1 className="flex font-header text-background-color font-semibold mb-6 md:ml-10 lg:ml-24 self-center md:self-start text-base md:text-xl lg:text-3xl">
+            Now you can see my{' '}
             <strong className="text-pink-color ml-2 font-semibold">
               repositories
             </strong>
