@@ -28,7 +28,7 @@ export default function Layout({ children, title, actualPage }) {
         <div className="absolute transition-all duration-150 ease-in-out h-full hidden md:flex w-3 bg-background-color" />
         <Nav actualPage={`${actualPage}`} />
         {children}
-        <footer className="flex inset-x-0 bottom-0 p-2 justify-center bg-gray-color">
+        <footer className="absolute inset-x-0 bottom-0 justify-center">
           <p className="font-sans text-pink-color font-500 text-center">
             website made with, nextjs, tailwindcss and lots of love
           </p>
