@@ -4,7 +4,7 @@ import Layout from '../components/layout';
 export default function DoNotFind() {
   return (
     <Layout title="404" actualPage="">
-      <div className="flex w-screen justify-center ">
+      <div className="flex w-screen h-full justify-center">
         <img
           src="images/4040.png"
           alt="error 404"
