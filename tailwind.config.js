@@ -49,5 +49,9 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [
+    "postcss-import",
+    "tailwindcss",
+    "autoprefixer",
+  ],
 }
