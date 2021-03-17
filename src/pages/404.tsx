@@ -8,7 +8,7 @@ export default function DoNotFind() {
         <img
           src="images/4040.png"
           alt="error 404"
-          className="absolute opacity-25 self-center"
+          className="absolute h-full opacity-25 self-center"
         />
         <div className="flex flex-col relative content-center justify-center items-center">
           <h1 className="font-extrabold text-404 italic text-pink-color font-mono">

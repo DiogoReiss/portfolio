@@ -12,7 +12,7 @@ const AboutPage: NextPage = () => {
         >
           <img
             src="images/page2.png"
-            className="flex self-center justify-self-end mr-0 md:visible"
+            className="flex self-center h-full justify-self-end mr-0 md:visible"
             alt="cyborg image by Icons8"
           />
         </div>

@@ -18,9 +18,12 @@ const IndexPage: NextPage = () => {
                 Come to see my projects{' '}
                 <strong className="text-pink-color font-normal">:).</strong>
               </p>
-              <a href="/repositories" className="grid w-9/12">
+              <a
+                href="/repositories"
+                className="flex justify-center md:justify-start md:self-start w-9/12"
+              >
                 <button
-                  className="grid justify-self-center md:justify-self-end md:animate-bounce bg-pink-color p-3 mt-2 rounded-lg font-header text-background-color font-semibold"
+                  className="justify-self-center md:justify-self-start md:animate-bounce bg-pink-color p-3 mt-6 rounded-lg font-header text-background-color font-semibold"
                   type="button"
                 >
                   <h1>MY PROJECTS</h1>
@@ -28,10 +31,10 @@ const IndexPage: NextPage = () => {
               </a>
             </div>
           </div>
-          <div className="flex-1 justify-center w-full mr-0 hidden md:flex lg:flex">
+          <div className="flex-1 justify-center mr-0 hidden md:flex">
             <img
               src="images/page1.png"
-              className="flex self-center justify-self-end mr-0 invisible md:visible xl:visible"
+              className="flex object-fit self-center h-full justify-self-end mr-0 invisible md:visible xl:visible"
               alt="cyborg image by Icons8"
             />
           </div>
