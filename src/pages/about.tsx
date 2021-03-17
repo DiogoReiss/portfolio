@@ -5,14 +5,14 @@ import ImageCard from '../components/imageCard';
 const AboutPage: NextPage = () => {
   return (
     <Layout title="About Me " actualPage="ABOUT ME">
-      <div className="flex flex-row w-screen justify-center">
+      <div className="flex flex-row w-screen h-full justify-center">
         <div
           className="flex-1 justify-center w-full mr-0 hidden md:flex
         "
         >
           <img
             src="images/page2.png"
-            className="flex self-center justify-self-end mr-0 md:visible"
+            className="flex self-center h-full justify-self-end mr-0 md:visible"
             alt="cyborg image by Icons8"
           />
         </div>

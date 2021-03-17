@@ -7,6 +7,7 @@ export default function Layout({ children, title, actualPage }) {
       <Head>
         <title>{title}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap"
@@ -23,12 +24,12 @@ export default function Layout({ children, title, actualPage }) {
         />
         <meta name="author" content="Diogo Reis" />
       </Head>
-      <div className="flex bg-gray-color w-full h-screen">
-        <div className="absolute h-screen w-3 bg-background-color" />
+      <div className="absolute bg-gray-color w-full h-full">
+        <div className="absolute transition-all duration-150 ease-in-out h-full hidden md:flex w-3 bg-background-color" />
         <Nav actualPage={`${actualPage}`} />
         {children}
-        <footer className="absolute inset-x-0 bottom-0 p-2 bg-transparent">
-          <p className="font-sans text-pink-color font-500 text-center bg-transparent">
+        <footer className="absolute inset-x-0 bottom-0 justify-center">
+          <p className="font-sans text-pink-color font-500 text-center">
             website made with, nextjs, tailwindcss and lots of love
           </p>
         </footer>
