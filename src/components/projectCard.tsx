@@ -1,7 +1,7 @@
 import { IProjectCard } from '../utils/types';
 import { connect } from 'react-redux';
 
-var styles =
+var projectRepoCard =
   'w-9/12 flex flex-col items-center font-mono font-semibold row-end-auto text-center text-xs md:text-base';
 
 let ProjectCard = ({ data }) =>
@@ -19,12 +19,12 @@ let ProjectCard = ({ data }) =>
           ({ name, description, language, html_url }: IProjectCard) => {
             return (
               <a
-                className={`transition duration-200 ease-in flex hover:bg-white transform hover:scale-105 rounded border-2 border-background-color justify-center hover:border-pink-color ${styles}`}
+                className={`transition duration-200 ease-in flex hover:bg-white transform hover:scale-105 rounded border-2 border-background-color justify-center hover:border-pink-color ${projectRepoCard}`}
                 href={`${html_url}`}
               >
                 <h1>{name}</h1>
-                <h2 className=" text-gray-700">{description}</h2>
-                <p className=" text-gray-700">Made with: {language}</p>
+                <h2 className="text-gray-700">{description}</h2>
+                <p className="text-gray-700">Made with: {language}</p>
               </a>
             );
           }

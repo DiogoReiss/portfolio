@@ -12,7 +12,10 @@ const reducer = (state = {}, action) => {
         repos: action.json
       };
     default:
-      return state;
+      return {
+        state,
+        loading: true
+      };
   }
 };
 

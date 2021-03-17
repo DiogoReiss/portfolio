@@ -9,7 +9,7 @@ function* fetchRepos() {
   }).catch( e => {
     console.log(e)
   })
-  yield put({type: "LOADED", json: data});
+  yield put({type: "LOADED", json: data})
 }
 
 function* actionWatcher() {
