@@ -23,8 +23,8 @@ let ProjectCard = ({ data }) =>
                 href={`${html_url}`}
               >
                 <h1>{name}</h1>
-                <h2>{description}</h2>
-                <p>Made with: {language}</p>
+                <h2 className=" text-gray-700">{description}</h2>
+                <p className=" text-gray-700">Made with: {language}</p>
               </a>
             );
           }
