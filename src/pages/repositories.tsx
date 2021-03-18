@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import { NextPage } from 'next';
 import Layout from '../components/layout';
 import Loading from '../components/loading';
