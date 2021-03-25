@@ -4,7 +4,7 @@ let Loading = ({ loading }) =>
   loading ? (
     <img
       className="animate-spin"
-      src="https://img.icons8.com/fluent-systems-regular/24/000000/loading-circle--v1.png"
+      src="https://img.icons8.com/ios-filled/150/000000/loading-circle--v2.png"
     />
   ) : null;
 const mapStateToProps = (state) => ({ loading: state.loading });

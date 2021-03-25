@@ -4,7 +4,7 @@ export default function ImageCard({
   src,
   alt,
   cardStyle = 'flex rounded border-2 border-pink-color mx-2 justify-center',
-  imgStyle = 'opacity-100',
+  imgStyle = 'opacity-100 flex w-auto h-auto',
 }: IimageCardProps) {
   return (
     <div className={`${cardStyle}`}>
