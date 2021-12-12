@@ -15,8 +15,10 @@ const Navbar = () => {
         height={70}
       />
       <div className={styles.pageOptions}>
-        {pageOptions.map((route) => (
-          <Link href={`#${route}`}>{route}</Link>
+        {pageOptions.map((route, index) => (
+          <Link key={index} href={`#${route}`}>
+            {route}
+          </Link>
         ))}
       </div>
     </div>
