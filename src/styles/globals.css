@@ -11,6 +11,10 @@
 html,
 body {
   background-color: var(--black-color);
+  background-image: url("../../public/background.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
   padding: 0;
   margin: 0;
   font-family: "Fira Code", monospace;
