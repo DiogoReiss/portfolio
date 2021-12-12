@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "../components/Head";
+import Navbar from "../components/navbar/Navbar";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
@@ -7,8 +8,8 @@ import styles from "../styles/Home.module.css";
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
-      <Head title="Home Page"></Head>
-
+      <Head title="Home Page" />
+      <Navbar />
       <main className={styles.main}>
         <h1 className={styles.title}>
           Hey, we are building a{" "}

@@ -1,0 +1,33 @@
+.container {
+  position: fixed;
+  padding-top: 1.5em;
+  margin: auto;
+  display: flex;
+  width: 95%;
+  height: 10%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pageOptions {
+  font-family: "Fira Code", monospace;
+  color: #efefef;
+  font-size: 1.7em;
+  font-weight: 400;
+  display: flex;
+  gap: 1em;
+}
+
+.pageOptions a:hover,
+.pageOptions a:focus,
+.pageOptions a:active {
+  text-decoration: underline;
+}
+
+.underline {
+  height: 15px;
+  display: flex;
+  bottom: 30px;
+  border-radius: 12%;
+  background-color: #a5a6cf8f;
+}
