@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <div className={styles.container}>
-      <a href="/">
+      <Link href="/">
         <Image
           src="/samurai.svg"
           alt="page logo"
@@ -24,7 +24,7 @@ const Navbar = () => {
           width={70}
           height={70}
         />
-      </a>
+      </Link>
       <div className={styles.pageOptions}>
         {pageOptions.map((route, index) => (
           <Link key={index} href={route.route}>
