@@ -41,3 +41,22 @@ span {
 * {
   box-sizing: border-box;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--span-text-color);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--grey-color);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--main-color);
+  border-radius: 20px;
+}
