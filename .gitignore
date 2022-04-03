@@ -1,0 +1,12 @@
+yarn.lock
+yarn-error.log
+
+node_modules
+
+# build/config files 
+.merlin
+.bsb.lock
+lib
+
+# post-build files
+**.bs.js
