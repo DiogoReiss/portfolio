@@ -7,9 +7,10 @@ module Styles = {
 
   let navbarOption = css({
     "transition": "300ms",
+    "color": Theme.Colors.grey->Theme.Colors.toString,
     "&:hover": {
       "transition": "300ms",
-      "color": Theme.Colors.grey->Theme.Colors.toString,
+      "color": Theme.Colors.spanPurple->Theme.Colors.toString,
       "textDecoration": "underline",
       "textDecorationThickness": 3.0->#em,
     },
@@ -21,7 +22,7 @@ let make = () => {
   <Base
     display=[#xs(#flex)]
     justifyContent=[#xs(#"space-between")]
-    mx=[#xs(20)]
+    mx=[#xs(30)]
     mt=[#xs(2)]
     alignContent=[#xs(#center)]>
     <a href={"/"}>

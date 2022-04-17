@@ -15,6 +15,15 @@ module Styles = {
     "fontWeight": "500",
     "color": Theme.Colors.spanPurple->Theme.Colors.toString,
   })
+  let findMore = css({
+    "fontSize": "2em",
+    "fontWeight": "500",
+    "color": Theme.Colors.spanPurple->Theme.Colors.toString,
+    "&: hover": {
+      "transition": "200ms",
+      "color": Theme.Colors.grey->Theme.Colors.toString,
+    }
+  })
 }
 
 @react.component
@@ -40,25 +49,27 @@ let make = () => {
         alignItems=[#xs(#center)]
         flexDirection=[#xs(#column)]>
         <img src=samurai />
+        <a href={"/about"}>
         <Box position=[#xs(#relative)]>
           <Typography
             cursor=[#xs(#pointer)]
             zIndex=[#xs(2)]
-            className=Styles.text
+            className=Styles.findMore
             position=[#xs(#relative)]
             height=[#xs(30->#px)]>
-            <a href={"/about"}> {"find out more ->"->text} </a>
+             {"find out more ->"->text} 
           </Typography>
           <Box
             position=[#xs(#absolute)]
             bgColor=[#xs(Theme.Colors.primaryPurple)]
             borderRadius=[#xs(1)]
-            height=[#xs(15->#px)]
+            height=[#xs(10->#px)]
             width=[#xs(100.0->#pct)]
             top=[#xs(15->#px)]
             zIndex=[#xs(0)]
           />
         </Box>
+        </a>
       </Box>
     </Base>
   </Layout>

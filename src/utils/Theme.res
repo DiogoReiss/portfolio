@@ -13,3 +13,26 @@ module Colors = {
 module Constants = {
   let fontFamily = "'Fira Code', monospace;"
 }
+
+module Icons = {
+  module AiFillInstagram = {
+    @module("react-icons/ai") @react.component
+    external make:
+      (~size: int=?, ~color: string=?, ~className: string=?) => React.element =
+      "AiFillInstagram"
+  }
+
+  module AiOutlineGithub = {
+    @module("react-icons/ai") @react.component
+    external make:
+      (~size: int=?, ~color: string=?, ~className: string=?) => React.element =
+      "AiOutlineGithub"
+  }
+
+  module AiFillLinkedin = {
+    @module("react-icons/ai") @react.component
+    external make:
+      (~size: int=?, ~color: string=?, ~className: string=?) => React.element =
+      "AiFillLinkedin"
+  }
+}
