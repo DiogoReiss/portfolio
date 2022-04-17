@@ -1,3 +1,4 @@
+@module("./utils/assets/background.svg") external backgroundImage: string = "default"
 Emotion.injectGlobal({
   "html": {
     "fontSize": "10px",
@@ -7,7 +8,10 @@ Emotion.injectGlobal({
     "height": "100%",
     "margin": "0",
     "padding": "0",
-    "backgroundColor": Theme.Colors.primaryPurple->Theme.Colors.toString,
+    "backgroundColor": Theme.Colors.blackColor->Theme.Colors.toString,
+    "backgroundImage": `url(${backgroundImage})`,
+    "backgroundSize": "auto",
+    "backgroundRepeat": "no-repeat",
   },
   "*": {
     "boxSixing": "border-box",
@@ -18,7 +22,7 @@ Emotion.injectGlobal({
     "backgroundColor": Theme.Colors.spanPurple->Theme.Colors.toString,
   },
   "a": {
-    "color": "inherit",
+    "color": Theme.Colors.spanPurple->Theme.Colors.toString,
     "textDecoration": "none",
   },
   "h1": {
@@ -26,6 +30,7 @@ Emotion.injectGlobal({
   },
   "h1::selection": {
     "color": Theme.Colors.spanPurple->Theme.Colors.toString,
+    "backgroundColor": Theme.Colors.grey->Theme.Colors.toString,
   },
   "span": {
     "color": Theme.Colors.spanPurple->Theme.Colors.toString,
