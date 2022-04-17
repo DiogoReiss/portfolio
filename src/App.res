@@ -24,6 +24,7 @@ Emotion.injectGlobal({
   "a": {
     "color": Theme.Colors.spanPurple->Theme.Colors.toString,
     "textDecoration": "none",
+    "width": "auto"
   },
   "h1": {
     "color": Theme.Colors.grey->Theme.Colors.toString,
