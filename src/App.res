@@ -24,7 +24,7 @@ Emotion.injectGlobal({
   "a": {
     "color": Theme.Colors.spanPurple->Theme.Colors.toString,
     "textDecoration": "none",
-    "width": "auto"
+    "width": "auto",
   },
   "h1": {
     "color": Theme.Colors.grey->Theme.Colors.toString,
@@ -46,6 +46,7 @@ let make = () => {
   switch url.path {
   //| list{"user", id} => <User id />
   | list{} => <Home />
+  | list{"blog"} => <Blog />
   | _ => <NotFound /> // <NotFound />
   }
 }
