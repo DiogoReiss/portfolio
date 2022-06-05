@@ -1,0 +1,17 @@
+[
+  {
+    "title": "first post",
+    "image": "/src/assets/image",
+    "description": "algo aqui"
+  },
+  {
+    "title": "first post 2",
+    "image": "/src/assets/image2",
+    "description": "algo aqui 2"
+  },
+  {
+    "title": "first post 3",
+    "image": "/src/assets/image3",
+    "description": "algo aqui 3"
+  }
+]
