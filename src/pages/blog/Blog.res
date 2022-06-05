@@ -9,28 +9,31 @@ module Styles = {
     "color": Theme.Colors.grey->Theme.Colors.toString,
     "marginBottom": "20px",
   })
+
   let text = css({
     "fontSize": "2em",
     "fontWeight": "500",
     "color": Theme.Colors.spanPurple->Theme.Colors.toString,
-  })
-  let findMore = css({
-    "fontSize": "2em",
-    "fontWeight": "500",
-    "color": Theme.Colors.spanPurple->Theme.Colors.toString,
-    "&: hover": {
-      "transition": "200ms",
-      "color": Theme.Colors.grey->Theme.Colors.toString,
-    },
   })
 }
 
 @react.component
 let make = () => {
   <Layout>
-    <Base>
-      <Typography className=Styles.title> {`Minha mulher é linda`->text} </Typography>
-      <Typography className=Styles.title> {`Minha mulher é linda`->text} </Typography>
+    <Base
+      display=[#xs(#flex)]
+      mt=[#xs(10)]
+      mb=[#xs(0)]
+      ml=[#xs(0)]
+      mr=[#xs(0)]
+      height=[#xs(100.0->#pct)]
+      width=[#xs(100.0->#pct)]
+      alignItems=[#xs(#center)]
+      flexDirection=[#xs(#column)]>
+      <Typography className=Styles.title> {`Posts`->text} </Typography>
+      <Box height=[#xs(62.0->#em)] width=[#xs(40.0->#pct)] overflow=[#xs(#auto)] m=[#xs(0)]>
+        <Post /> <Post /> <Post /> <Post /> <Post /> <Post /> <Post />
+      </Box>
     </Base>
   </Layout>
 }

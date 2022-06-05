@@ -1,6 +1,7 @@
 open BaseBindings
 open Ancestor.Default
 @module("../../utils/assets/samurai.svg") external samurai: string = "default"
+@module("../../utils/assets/background.svg") external backgroundImage: string = "default"
 
 module Styles = {
   open Emotion
@@ -22,7 +23,7 @@ module Styles = {
     "&: hover": {
       "transition": "200ms",
       "color": Theme.Colors.grey->Theme.Colors.toString,
-    }
+    },
   })
 }
 
@@ -50,25 +51,25 @@ let make = () => {
         flexDirection=[#xs(#column)]>
         <img src=samurai />
         <a href={"/about"}>
-        <Box position=[#xs(#relative)]>
-          <Typography
-            cursor=[#xs(#pointer)]
-            zIndex=[#xs(2)]
-            className=Styles.findMore
-            position=[#xs(#relative)]
-            height=[#xs(30->#px)]>
-             {"find out more ->"->text} 
-          </Typography>
-          <Box
-            position=[#xs(#absolute)]
-            bgColor=[#xs(Theme.Colors.primaryPurple)]
-            borderRadius=[#xs(1)]
-            height=[#xs(10->#px)]
-            width=[#xs(100.0->#pct)]
-            top=[#xs(15->#px)]
-            zIndex=[#xs(0)]
-          />
-        </Box>
+          <Box position=[#xs(#relative)]>
+            <Typography
+              cursor=[#xs(#pointer)]
+              zIndex=[#xs(2)]
+              className=Styles.findMore
+              position=[#xs(#relative)]
+              height=[#xs(30->#px)]>
+              {"find out more ->"->text}
+            </Typography>
+            <Box
+              position=[#xs(#absolute)]
+              bgColor=[#xs(Theme.Colors.primaryPurple)]
+              borderRadius=[#xs(1)]
+              height=[#xs(10->#px)]
+              width=[#xs(100.0->#pct)]
+              top=[#xs(15->#px)]
+              zIndex=[#xs(0)]
+            />
+          </Box>
         </a>
       </Box>
     </Base>
