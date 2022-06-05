@@ -17,22 +17,25 @@ module Constants = {
 module Icons = {
   module AiFillInstagram = {
     @module("react-icons/ai") @react.component
-    external make:
-      (~size: int=?, ~color: string=?, ~className: string=?) => React.element =
+    external make: (~size: int=?, ~color: string=?, ~className: string=?) => React.element =
       "AiFillInstagram"
   }
 
   module AiOutlineGithub = {
     @module("react-icons/ai") @react.component
-    external make:
-      (~size: int=?, ~color: string=?, ~className: string=?) => React.element =
+    external make: (~size: int=?, ~color: string=?, ~className: string=?) => React.element =
       "AiOutlineGithub"
   }
 
   module AiFillLinkedin = {
     @module("react-icons/ai") @react.component
-    external make:
-      (~size: int=?, ~color: string=?, ~className: string=?) => React.element =
+    external make: (~size: int=?, ~color: string=?, ~className: string=?) => React.element =
       "AiFillLinkedin"
+  }
+
+  module AiFillCaretLeft = {
+    @module("react-icons/ai") @react.component
+    external make: (~size: int=?, ~color: string=?, ~className: string=?) => React.element =
+      "AiFillCaretLeft"
   }
 }

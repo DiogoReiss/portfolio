@@ -9,9 +9,6 @@ Emotion.injectGlobal({
     "margin": "0",
     "padding": "0",
     "backgroundColor": Theme.Colors.blackColor->Theme.Colors.toString,
-    "backgroundImage": `url(${backgroundImage})`,
-    "backgroundSize": "auto",
-    "backgroundRepeat": "no-repeat",
   },
   "*": {
     "boxSixing": "border-box",
@@ -24,7 +21,7 @@ Emotion.injectGlobal({
   "a": {
     "color": Theme.Colors.spanPurple->Theme.Colors.toString,
     "textDecoration": "none",
-    "width": "auto"
+    "width": "auto",
   },
   "h1": {
     "color": Theme.Colors.grey->Theme.Colors.toString,
@@ -37,6 +34,17 @@ Emotion.injectGlobal({
     "color": Theme.Colors.spanPurple->Theme.Colors.toString,
     "fontSize": #em(2),
   },
+  // not working, yet!
+  "& ::-webkit-scrollbar": {
+    "width": #px(12),
+  },
+  "& ::-webkit-scrollbar-track": {
+    "boxShadow": "inset 0 0 5px grey",
+    "borderRadius": #px(10),
+  },
+  "& ::-webkit-scrollbar-thumb:hover": {
+    "backgroundColor": "#b30000",
+  },
 })
 
 @react.component
@@ -46,6 +54,7 @@ let make = () => {
   switch url.path {
   //| list{"user", id} => <User id />
   | list{} => <Home />
+  | list{"blog"} => <Blog />
   | _ => <NotFound /> // <NotFound />
   }
 }
