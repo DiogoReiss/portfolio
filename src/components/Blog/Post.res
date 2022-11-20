@@ -44,7 +44,7 @@ module Styles = {
     },
     "&:hover": {
       "transition": "400ms",
-      "transform": "scale(1.05)",
+      "transform": "scale(1.02)",
       "borderWidth": "2px",
       "borderStyle": "solid",
       "borderColor": Theme.Colors.grey->Theme.Colors.toString,

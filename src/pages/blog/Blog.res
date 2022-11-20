@@ -31,8 +31,23 @@ let make = () => {
       alignItems=[#xs(#center)]
       flexDirection=[#xs(#column)]>
       <Typography className=Styles.title> {`Posts`->text} </Typography>
-      <Box height=[#xs(62.0->#em)] width=[#xs(40.0->#pct)] overflow=[#xs(#auto)] m=[#xs(0)]>
-        <Post /> <Post /> <Post /> <Post /> <Post /> <Post /> <Post />
+      <Box
+        height=[#xs(90.0->#em)]
+        width=[#xs(30.0->#pct)]
+        overflowX=[#xs(#visible)]
+        overflowY=[#xs(#auto)]
+        m=[#xs(0)]>
+        <Post />
+        <Post />
+        <Post />
+        <Post />
+        <Post />
+        <Post />
+        <Post />
+        <Post />
+        <Post />
+        <Post />
+        <Post />
       </Box>
     </Base>
   </Layout>
