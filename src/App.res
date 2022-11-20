@@ -34,17 +34,6 @@ Emotion.injectGlobal({
     "color": Theme.Colors.spanPurple->Theme.Colors.toString,
     "fontSize": #em(2),
   },
-  // not working, yet!
-  "& ::-webkit-scrollbar": {
-    "width": #px(12),
-  },
-  "& ::-webkit-scrollbar-track": {
-    "boxShadow": "inset 0 0 5px grey",
-    "borderRadius": #px(10),
-  },
-  "& ::-webkit-scrollbar-thumb:hover": {
-    "backgroundColor": "#b30000",
-  },
 })
 
 @react.component
